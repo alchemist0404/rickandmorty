@@ -1,0 +1,39 @@
+
+/* pagination */
+.character-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .page-link {
+        background: #3c3e44;
+        color: white;
+        border-color: #5a5a5a;
+        &:focus {
+            z-index: 3;
+            color: #ffffff;
+            background-color: #3c3e44;
+            outline: 0;
+            box-shadow: none;
+        }
+        &:hover {
+            background: #747474;
+            color: white;
+            border-color: #8f8f8f;
+        }
+    }
+    .page-item{
+        &.active {
+            .page-link {
+                background: #2f3034;
+                border-color: #5a5a5a;
+            }
+        }
+        &.disabled {
+            .page-link {
+                background: #3c3e44;
+                color: white;
+                border-color: #5a5a5a;
+            }
+        }
+    }
+}
